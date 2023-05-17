@@ -1,0 +1,26 @@
+@font-face {
+  font-family: imported;
+  src:url(./assets/fonts/Gotham-Light.otf)
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: imported;
+}
+
+.container {
+  display: flex;
+  max-width: 390px;
+  margin: 0 auto;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #F2F2F2;
+}
+
+
+
+

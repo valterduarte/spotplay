@@ -1,0 +1,21 @@
+.container {
+  padding: 47px ;
+} 
+
+.container img {
+  margin-top: 175px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 17px;
+  margin-top: 20px;
+  color: #797979;
+}
+
+ h2 {
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 20px;
+  color: #383838;
+}
