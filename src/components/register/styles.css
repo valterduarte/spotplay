@@ -1,0 +1,50 @@
+.btn-register  {
+  width: 147px;
+  height: 73px;
+  background: #42C83C;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  justify-content: space-between;
+  opacity: 1;
+}
+
+.btn-register:hover  {
+  transition: 500ms ;
+  opacity: 0.7;
+
+}
+
+
+.btn-register h3 {
+  font-weight: 500;
+  font-size: 19px;
+  height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #42C83C;
+}
+
+#container-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+  
+}
+
+strong  {
+  font-weight: 500;
+  font-size: 19px;
+  color: #313131;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+
