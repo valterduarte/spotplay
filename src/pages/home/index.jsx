@@ -5,7 +5,7 @@ import './styles.css'
 
 function Home() {
   return (
-    <div className="container">
+    <div id="home" className="container">
       <img src= {spotfy} alt="Logo spotfy" />
       <h2>Enjoy listening to music</h2>
       <p>Spotify is a proprietary Swedish audio streaming and media services provider</p>

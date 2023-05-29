@@ -25,3 +25,21 @@ p {
   width: 147px;
   height: 73px;
 }
+
+#container-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+strong  {
+  font-weight: 500;
+  font-size: 19px;
+  color: #313131;
+}
+
+a {
+  text-decoration: none;
+}
