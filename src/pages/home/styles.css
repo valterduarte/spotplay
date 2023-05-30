@@ -24,7 +24,7 @@
   text-decoration: none;
 }
 
-#container-button {
+#home #container-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
