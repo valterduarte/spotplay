@@ -1,8 +1,22 @@
-h2 {
-  font-weight: 700;
-  font-size: 30px;
+#register img {
+  Width: 108px;
+  Height: 33px;
+  margin-top: 38px;
 }
 
-a {
+#register h2 {
+  font-size: 30px;
+  line-height: 41px;
+  margin-top: 47px;
+}
+
+
+#register p {
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 15px;
+}
+
+#register p a {
   color: #38B432;
 }
