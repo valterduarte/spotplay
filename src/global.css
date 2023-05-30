@@ -8,19 +8,37 @@
   padding: 0;
   box-sizing: border-box;
   font-family: imported;
-  background-color:  	#e9e9e9
-
 }
 
 .container {
   display: flex;
-  max-width: 390px;
-  margin: 0 auto;
-  height: 100vh;
   flex-direction: column;
   align-items: center;
-  background-color: #F2F2F2;
+  width: 100%;
+  max-width: 650px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 33px ;
+}
 
+.container h2 {
+  font-style: normal;
+  font-weight: 700;
+  color: #383838;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.container p {
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #797979;
+}
+
+.button-register-home {
+  width: 147px;
+  height: 73px;
 }
 
 

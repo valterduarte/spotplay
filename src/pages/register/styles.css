@@ -1,12 +1,22 @@
-h2 {
-  font-weight: 700;
+#register img {
+  Width: 108px;
+  Height: 33px;
+  margin-top: 38px;
+}
+
+#register h2 {
   font-size: 30px;
+  line-height: 41px;
+  margin-top: 47px;
 }
 
-a {
+
+#register p {
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 15px;
+}
+
+#register p a {
   color: #38B432;
-}
-
-button {
-  margin-top: 33px;
 }
