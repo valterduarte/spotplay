@@ -1,29 +1,27 @@
-.container {
-  padding: 0 33px ;
-  border-radius: 43px;
-} 
-
-.container img {
+#home img {
   margin-top: 175px;
 }
 
-p {
-  font-weight: 400;
-  font-size: 17px;
-  margin-top: 20px;
-  color: #797979;
-}
-
- h2 {
-  font-weight: 700;
-  font-size: 24px;
+#home h2 {
   margin-top: 55px;
-  color: #383838;
+  font-size: 26px;
+  line-height: 35px;
 }
 
-.button-register-home {
-  width: 147px;
-  height: 73px;
+#home p {
+  font-size: 17px;
+  line-height: 23px;
+  margin-top: 20px;
+}
+
+#home strong  {
+  font-weight: 500;
+  font-size: 19px;
+  color: #313131;
+}
+
+#home a {
+  text-decoration: none;
 }
 
 #container-button {
@@ -32,14 +30,4 @@ p {
   align-items: center;
   width: 100%;
   margin-top: 40px;
-}
-
-strong  {
-  font-weight: 500;
-  font-size: 19px;
-  color: #313131;
-}
-
-a {
-  text-decoration: none;
 }
