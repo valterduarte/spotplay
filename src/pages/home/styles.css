@@ -23,7 +23,9 @@
 #home a {
   text-decoration: none;
   align-items: center;
-  margin-top: 20px;
+  margin-right: 18px;
+  margin-top: 18px;
+  padding: 20px;
 }
 
 #home #container-button {
@@ -36,3 +38,5 @@
 #home .button-register-home {
   margin-top: 20px;
 }
+
+

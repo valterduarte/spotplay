@@ -1,4 +1,5 @@
 import GreenButton from "../../components/greenButton"
+import Footer from "../../components/footer"
 import spotfy from "../../assets/imgs/logo.png"
 import './styles.css'
 
@@ -14,8 +15,8 @@ function Register() {
         <input type="Enter email" placeholder="Enter email" />
         <input type="password" placeholder="password"/>
       </form>
-      
       <GreenButton label="creat account" />
+      <Footer />
     </div>
   )
 }
