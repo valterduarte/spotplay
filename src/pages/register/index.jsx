@@ -21,7 +21,8 @@ function Register() {
   }
 
   const handleSubmit = () => {
-    console.log(formData)
+    const objFormData = JSON.stringify(formData)
+    localStorage.setItem('objFormData', objFormData);
   };
 
   return (
