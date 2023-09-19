@@ -1,11 +1,8 @@
-import { useNavigate } from "react-router-dom";
 import './styles.css';
 
-function GreenButton({ label }) {
-  const navigate = useNavigate();
-
+function GreenButton({ label, touchClick }) {
   function onClick() {
-    navigate(`/register`);
+    touchClick();
   }
 
   return (
