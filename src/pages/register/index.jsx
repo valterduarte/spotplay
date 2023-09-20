@@ -5,7 +5,6 @@ import './styles.css'
 import { useState } from "react"
 
 function Register() {
-
   const [formData, setFormData] = useState ({
     fullname:"",
     email:"",
@@ -26,7 +25,7 @@ function Register() {
   };
 
   return (
-    <div id="register" className="container">
+    <div className="container register-signin">
       <img id="Logo-spotfy" src= {spotfy} alt="Logo spotfy" />
       <h2>Register</h2>
       <p>If you need any support a <a href="">click here</a></p>
