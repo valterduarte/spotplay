@@ -3,8 +3,11 @@ import Footer from "../../components/footer"
 import spotfy from "../../assets/imgs/logo.png"
 import './styles.css'
 import { useState } from "react"
+import { useNavigate } from 'react-router-dom';
+
 
 function Register() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState ({
     fullname:"",
     email:"",
@@ -22,11 +25,12 @@ function Register() {
   const handleSubmit = () => {
     const objFormData = JSON.stringify(formData)
     localStorage.setItem('objFormData', objFormData);
+    navigate('/player');
   };
 
   return (
     <div className="container register-signin">
-      <img id="Logo-spotfy" src= {spotfy} alt="Logo spotfy" />
+      <img id="logo-spotfy" src= {spotfy} alt="Logo spotfy" />
       <h2>Register</h2>
       <p>If you need any support a <a href="">click here</a></p>
 
@@ -35,7 +39,7 @@ function Register() {
         <input type="Enter email" name="email" value={formData.email} placeholder="Enter email" onChange={handleChange}/>
         <input type="password" name="password" value={formData.password} placeholder="password" onChange={handleChange}/>
       </form>
-      <GreenButton label="creat account" touchClick={handleSubmit} />
+      <GreenButton label="creat account" touchClick={handleSubmit}/>
       <Footer />
     </div>
   )
