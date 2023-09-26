@@ -9,10 +9,14 @@ function Home() {
       <img src= {spotfy} alt="Logo spotfy" />
       <h2>Enjoy listening to music</h2>
       <p>Spotify is a proprietary Swedish audio streaming and media services provider</p>
+      
       <div id="container-button">
         <div className="button-register-home">
-          <GreenButton label="Register" />
-        </div>               
+          <Link to="/Register">
+            <GreenButton label="Register" />
+          </Link>
+        </div>  
+
         <Link to="/signin">
           <strong>Sign In</strong>
         </Link>
