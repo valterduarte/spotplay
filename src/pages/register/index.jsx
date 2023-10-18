@@ -2,7 +2,7 @@ import GreenButton from "../../components/greenButton"
 import Footer from "../../components/footer"
 import spotfy from "../../assets/imgs/logo.png"
 import './styles.css'
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useNavigate } from 'react-router-dom';
 
 
@@ -13,6 +13,7 @@ function Register() {
     email:"",
     password:"",
   })
+  const [isDisabled, setIsDisabled] = useState(true)
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -28,6 +29,14 @@ function Register() {
     navigate('/player');
   };
 
+  useEffect(() => {
+    if (formData.fullname && formData.email && formData.password) {
+      setIsDisabled(false)
+    } else {
+      setIsDisabled(true)
+    }
+  }, [formData]);
+
   return (
     <div className="container register-signin">
       <img id="logo-spotfy" src= {spotfy} alt="Logo spotfy" />
@@ -39,7 +48,7 @@ function Register() {
         <input type="Enter email" name="email" value={formData.email} placeholder="Enter email" onChange={handleChange}/>
         <input type="password" name="password" value={formData.password} placeholder="password" onChange={handleChange}/>
       </form>
-      <GreenButton label="creat account" touchClick={handleSubmit}/>
+      <GreenButton label="creat account" isDisabled={isDisabled} touchClick={handleSubmit}  />
       <Footer />
     </div>
   )

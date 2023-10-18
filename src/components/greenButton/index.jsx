@@ -1,12 +1,12 @@
 import './styles.css';
 
-function GreenButton({ label, touchClick }) {
+function GreenButton({ label, touchClick, isDisabled=false }) {
   function onClick() {
     touchClick();
   }
 
   return (
-    <button onClick={onClick} className="btn-register">
+    <button disabled={isDisabled} onClick={onClick} className="btn-register">
       {label}
     </button>
   )
