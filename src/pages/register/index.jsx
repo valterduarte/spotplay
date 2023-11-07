@@ -44,11 +44,11 @@ function Register() {
       <p>If you need any support a <a href="">click here</a></p>
 
       <form>
-        <input type ="full name" name="fullname" value={formData.fullname} placeholder="full name" onChange={handleChange}/> 
-        <input type="Enter email" name="email" value={formData.email} placeholder="Enter email" onChange={handleChange}/>
+        <input type ="text" name="fullname" value={formData.fullname} placeholder="full name" onChange={handleChange}/> 
+        <input type="email" name="email" value={formData.email} placeholder="Enter email" onChange={handleChange}/>
         <input type="password" name="password" value={formData.password} placeholder="password" onChange={handleChange}/>
       </form>
-      <GreenButton label="creat account" isDisabled={isDisabled} touchClick={handleSubmit}  />
+      <GreenButton label="creat account" isDisabled={isDisabled} touchClick={handleSubmit}/>
       <Footer />
     </div>
   )
