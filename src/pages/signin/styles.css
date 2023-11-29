@@ -1,4 +1,4 @@
-#recovery-signin  {
+#recovery-signin ,#login-ou-senha-inválido {
   color: #383838;
   font-size: 14px;
   font-style: normal;
@@ -10,3 +10,10 @@
   margin-top: 27px;
 }
 
+#login-ou-senha-inválido {
+  color: red;
+  font-size: 12px;
+  margin-top: 10px;
+
+
+}

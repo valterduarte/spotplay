@@ -2,10 +2,12 @@ import GreenButton from "../../components/greenButton"
 import spotfy from "../../assets/imgs/logo.png"
 import './styles.css'
 import { useState, useEffect } from "react"
-import { useNavigate } from "react-router-dom"
+import { json, useNavigate } from "react-router-dom"
 
 
 function Signin() {
+  const [isVisible, setIsVisible] = useState(false);
+
   const navigate = useNavigate();
   const [formData, setFormData] = useState ({
     email: "",
@@ -22,8 +24,14 @@ function Signin() {
   }
 
   const handleSubmit = () => {
-    
+   const localStorageDataLogin = localStorage.getItem('objFormData');
+   const localStorageDataLoginObject = JSON.parse(localStorageDataLogin)
+   
+   if (formData.email === localStorageDataLoginObject.email && formData.password === localStorageDataLoginObject.password) {
     navigate('/player');
+   } else {
+    setIsVisible(true)
+   }
   };
 
   useEffect(() => {
@@ -47,6 +55,7 @@ function Signin() {
             <input type="password" name="password" placeholder="password" onChange={handleChange} /> 
           </form>
 
+          {isVisible && <p id="login-ou-senha-inválido" >Login ou Senha inválidos</p>}
           <p id="recovery-signin" >Recovery password</p>
 
           <GreenButton label="Sign In" isDisabled={isDisabled} touchClick={handleSubmit} />

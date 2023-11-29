@@ -1,0 +1,25 @@
+.wrapper-logo-menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-top: 35px;
+}
+
+.wrapper-logo-menu nav {
+  margin-right: 37px;
+}
+
+#player-logo-spotfy {
+  Width: 108px;
+  Height: 33px;
+  margin: auto;
+}
+
+#news p {
+  color: #000;
+  font-family: Gotham-Black;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500; 
+}
