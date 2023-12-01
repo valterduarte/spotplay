@@ -18,8 +18,18 @@
 
 #news p {
   color: #000;
-  font-family: Gotham-Black;
   font-size: 20px;
   font-style: normal;
   font-weight: 500; 
+  text-align: left;
+}
+
+#playlist p {
+  color: #131313;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+
 }

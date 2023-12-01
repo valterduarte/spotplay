@@ -16,6 +16,10 @@ function Player() {
           </div>
 
           <Retagulo8/>
+          
+          <div id="playlist">
+            <p>Playlist</p>
+          </div>
         
         </div>
 

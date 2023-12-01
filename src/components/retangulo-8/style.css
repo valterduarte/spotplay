@@ -1,0 +1,28 @@
+#carrossel {
+  margin-top: 28px;
+}
+
+#carrossel img {
+  width: 147px;
+  height: 185px;
+}
+
+#carrossel  p {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; 
+  margin-top: 13px;
+  text-align: left;
+}
+
+#carrossel #subtitle  {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
+  margin-top: 3px;
+}
+
