@@ -11,11 +11,16 @@ function Player() {
             <nav>...</nav>
           </div>
 
-          <div id="news">
-            <p>News</p>
-          </div>
+          <h3>News</h3>
 
-          <Retagulo8/>
+          <div id="songbox">
+            <Retagulo8/>
+            <Retagulo8/>
+            <Retagulo8/>
+            <Retagulo8/>
+          </div>
+          
+
           
           <div id="playlist">
             <p>Playlist</p>
