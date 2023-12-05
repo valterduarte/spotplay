@@ -4,31 +4,24 @@ import Retagulo8 from "../../components/retangulo-8"
 
 function Player() {
   return (
-    <div>
-        <div className="container register-signin">
-          <div className="wrapper-logo-menu">
-            <img id="player-logo-spotfy" src= {spotfy} alt="Logo spotfy" /> 
-            <nav>...</nav>
-          </div>
-
-          <h3>News</h3>
-
-          <div id="songbox">
-            <Retagulo8/>
-            <Retagulo8/>
-            <Retagulo8/>
-            <Retagulo8/>
-          </div>
-          
-
-          
-          <div id="playlist">
-            <p>Playlist</p>
-          </div>
-        
+      <div className="container" id="player">
+        <div className="wrapper-logo-menu">
+          <img id="player-logo-spotfy" src= {spotfy} alt="Logo spotfy" /> 
+          <nav>...</nav>
         </div>
 
-    </div>  
+        <h3>News</h3>
+
+        <div id="songbox">
+          <Retagulo8/>
+          <Retagulo8/>
+          <Retagulo8/>
+        </div>
+
+        <div id="playlist">
+          <p>Playlist</p>
+        </div>
+      </div> 
   )
 }
 
