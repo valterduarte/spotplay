@@ -1,21 +1,20 @@
 import spotfy from "../../assets/imgs/logo.png"
 import './style.css'
-import Retagulo8 from "../../components/retangulo-8"
+import Carrosselsongs from "../../components/Carrosselsongs"
 
 function Player() {
   return (
       <div className="container" id="player">
         <div className="wrapper-logo-menu">
-          <img id="player-logo-spotfy" src= {spotfy} alt="Logo spotfy" /> 
+          <img id="player-logo-spotfy" src={spotfy} alt="Logo spotfy" /> 
           <nav>...</nav>
         </div>
 
         <h3>News</h3>
-
         <div id="songbox">
-          <Retagulo8/>
-          <Retagulo8/>
-          <Retagulo8/>
+          <Carrosselsongs/>
+          <Carrosselsongs/>
+          <Carrosselsongs/>
         </div>
 
         <div id="playlist">
