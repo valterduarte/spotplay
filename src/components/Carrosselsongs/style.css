@@ -1,0 +1,37 @@
+#wrapper-song {
+  width: auto;
+  height: auto;
+  align-self: flex-start;
+  margin-right: 14px ;
+}
+
+#wrapper-song h3 {
+  text-align: left;
+}
+
+#wrapper-song img {
+  width: 147px;
+  height: 185px;
+}
+
+#wrapper-song #title-song {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; 
+  margin-top: 13px;
+  margin-left: 10px;
+  text-align: left;
+}
+
+#wrapper-song #subtitle  {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
+  margin-top: 3px;
+  margin-left: 10px;
+  text-align: left;
+}
