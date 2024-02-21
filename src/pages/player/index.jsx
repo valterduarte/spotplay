@@ -1,6 +1,7 @@
 import spotfy from "../../assets/imgs/logo.png"
 import './style.css'
 import Carrosselsongs from "../../components/Carrosselsongs"
+import Songslist from '../../components/Songslist'
 
 function Player() {
   return (
@@ -17,8 +18,10 @@ function Player() {
           <Carrosselsongs/>
         </div>
 
+        <h3>Playlist</h3>
         <div id="playlist">
-          <p>Playlist</p>
+          <Songslist/>
+          <Songslist/>
         </div>
       </div> 
   )

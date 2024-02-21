@@ -1,0 +1,45 @@
+#info-songs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+#info-songs #playsong img {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+}
+
+#info-songs h4 {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; 
+}
+
+#info-songs p {
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
+  margin-top: 5px;
+}
+
+#info-songs span {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
+}
+
+#info-songs img#heart {
+  display: flex;
+  width: 27px;
+  height: 27px;
+  justify-content: center;
+  align-items: center;
+}
