@@ -1,8 +1,8 @@
-import playersongs from '../../assets/imgs/button-play.jpg'
+import playersongs from '../../assets/imgs/ButtonPlay.jpg'
 import heart from '../../assets/imgs/Heart.png'
 import './style.css';
 
-function Songslist(){
+function SongsList(){
   return (
     <div>
       <div id="info-songs">
@@ -20,5 +20,5 @@ function Songslist(){
   )
 }
 
-export default Songslist
+export default SongsList
 

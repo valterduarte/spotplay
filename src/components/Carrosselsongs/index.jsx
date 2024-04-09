@@ -5,6 +5,7 @@ function Carrosselsongs(){
   return (
     <div id="wrapper-song">
       <img src={retangulo8} alt="banner-carrossel" />
+      <div className="title-like"></div>
       <p id='title-song'>Bad Guy</p>
       <p id="subtitle">Billie Eilish</p>
     </div>
