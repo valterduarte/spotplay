@@ -19,23 +19,31 @@ function NowPlayimg(){
             Now playing
         </h1>
             <img id='hero-image' src={hero} alt="hero-image" />
-          <div className="title-like">
-            <p id='title-song'>Bad Guy</p>
-            <p id="subtitle">Billie Eilish</p>
-            <img id='heart-like' src={heart} alt="heart-like " /> 
+          <div id="title-like">
+            <div id="title-subtitle">
+              <p id='title-song'>Bad Guy</p>
+              <p id="subtitle">Billie Eilish</p>
+            </div>
+              <img id='heart-like' src={heart} alt="heart-like " /> 
           </div>
-          <div className="time-line">
-            <img src={line1} alt="" />
+          
+          <div id="time-line">
+            <img id="line1" src={line1} alt="" />
             <img src={circle} alt="" />
-            <img src={line2} alt="" />
+            <img id="line2" src={line2} alt="" />
           </div>
-          <div className="button-nowplaying">
+
+          <div id="time-track">
+            <p>2;25</p> 
+            <p>4:02</p> 
+          </div>
+
+          <div id="button-nowplaying">
             <img src={repeate} alt="" srcset="" />
             <img src={previous} alt="" srcset="" />
-            <img src={buttonnowplaying} alt="" srcset="" />
+            <img id="btn-play" src={buttonnowplaying} alt="" srcset="" />
             <img src={next} alt="" srcset="" />
             <img src={Shuffle} alt="" srcset="" />
-
           </div>
       </div>
    </div>
