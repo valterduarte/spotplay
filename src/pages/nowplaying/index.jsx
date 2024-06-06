@@ -10,7 +10,7 @@ import next from "../../assets/imgs/next.png"
 import Shuffle from "../../assets/imgs/Shuffle.png"
 import './style.css';
 
-function NowPlayimg(){
+function NowPlaying(){
   return (
    <div>
       <div className="container" id="now-playing">
@@ -22,7 +22,7 @@ function NowPlayimg(){
             <div id="title-subtitle">
               <p id='title-song'>Bad Guy</p>
               <p id="subtitle">Billie Eilish</p>
-            </div>
+            </div>  
               <img id='heart-like' src={heart} alt="heart-like " /> 
           </div>
           
@@ -50,5 +50,5 @@ function NowPlayimg(){
 }
 
 
-export default NowPlayimg 
+export default NowPlaying 
 
