@@ -8,7 +8,6 @@ import previous from "../../assets/imgs/previous.png"
 import buttonnowplaying from "../../assets/imgs/buttonnowplaying.png"
 import next from "../../assets/imgs/next.png"
 import Shuffle from "../../assets/imgs/Shuffle.png"
-
 import './style.css';
 
 function NowPlayimg(){

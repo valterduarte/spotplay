@@ -8,6 +8,7 @@ h1 {
   height: 316px;
   margin-top: 20px;
 }
+
 #now-playing #title-like {
   display: flex;
   width: 100%;
@@ -72,7 +73,6 @@ h1 {
   height: 26px;
   cursor: pointer;
 }
-
 
 #now-playing #button-nowplaying #btn-play  {
   width: 65px;
