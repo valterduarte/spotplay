@@ -1,4 +1,4 @@
-import playersongs from '../../assets/imgs/button-play.jpg'
+import playersongs from '../../assets/imgs/ButtonPlay.jpg'
 import heart from '../../assets/imgs/Heart.png'
 import './style.css';
 
