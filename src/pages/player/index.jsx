@@ -18,7 +18,7 @@ function Player() {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: `grant_type=client_credentials&client_id=${clientId}&client_secret=${clientSecret}`
-      }).catch(err => console.error("Error:", err));
+      }).catch(err => console.error("Token API Error:", err));
 
       const data = await response.json();
       console.log(data.access_token)
@@ -34,7 +34,7 @@ function Player() {
       const response = await fetch("https://api.spotify.com/v1/search?q=artist%3ASabrina%20Carpenter&type=track", {
         method: "GET",
         headers: { "Authorization": `Bearer ${token}`},
-      }).catch(err => console.error("Error:", err));
+      }).catch(err => console.error("Get Tracks Error:", err));
 
       const data = await response.json();
       
@@ -55,12 +55,11 @@ function Player() {
       <h3>News</h3>
       <div id="songbox">
         {tracks.slice(0, 3).map((track) => <Carrosselsongs key={track.id} />)}
-          
       </div>
 
       <h3>Playlist</h3>
       <div id="playlist">
-      {tracks.slice(0, 3).map((song) => <Songslist key={song.id} />)}
+        {tracks.slice(0, 3).map((song) => <Songslist key={song.id} />)}
       </div>
     </div> 
   )
