@@ -2,7 +2,7 @@ import playersongs from '../../assets/imgs/ButtonPlay.jpg'
 import heart from '../../assets/imgs/Heart.png'
 import './style.css';
 
-function SongsList(){
+function SongsList({trackName, artist, trackDuration}){
   return (
     <div>
       <div id="info-songs">
@@ -10,10 +10,10 @@ function SongsList(){
           <img src={playersongs} alt="play-player-songs" />
         </div>
         <div id="title-subtitle">
-          <h4>As It Was</h4>
-          <p>Harry Styles</p>
+          <h4> {trackName} </h4>
+          <p> {artist} </p>
         </div>
-        <span>5:33</span>
+        <span> {trackDuration} </span>
         <img id='heart' src={heart} alt="heart-player-songs" />
       </div>
     </div>

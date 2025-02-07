@@ -54,12 +54,12 @@ function Player() {
 
       <h3>News</h3>
       <div id="songbox">
-        {tracks.slice(0, 3).map((track) => <Carrosselsongs key={track.id} />)}
+        {tracks.slice(0, 3).map((track) => <Carrosselsongs artist={track.artists[0].name} trackName={track.name} banner={track.album.images[1].url}   key={track.id}  />)}
       </div>
 
       <h3>Playlist</h3>
       <div id="playlist">
-        {tracks.slice(0, 3).map((song) => <Songslist key={song.id} />)}
+        {tracks.slice(0, 10).map((track) => <Songslist trackName={track.name} artist={track.artists[0].name} trackDuration={track.duration_ms} key={track.id} />)}
       </div>
     </div> 
   )
