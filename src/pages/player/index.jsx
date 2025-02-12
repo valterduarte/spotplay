@@ -8,7 +8,7 @@ function Player() {
   const [token, setToken] = useState('');
   const [tracks, setTracks] = useState([]);
 
-    // esse useefect peag os dados
+    // esse useefect pega os dados
   useEffect(() => {
     async function fetchToken() {
       const clientId = "68e57a12f2bd44f48da49c4cfbd01c25";
@@ -24,11 +24,10 @@ function Player() {
       console.log(data.access_token)
       setToken(data.access_token);
     }
-
     fetchToken()
   }, []);
 
-  // esse useefect peag as musicas
+  // esse useefect pega as musicas
   useEffect(() => {
     async function getTracks() {
       const response = await fetch("https://api.spotify.com/v1/search?q=artist%3ASabrina%20Carpenter&type=track", {
@@ -49,7 +48,6 @@ function Player() {
     <div className="container" id="player">
       <div className="wrapper-logo-menu">
         <img id="player-logo-spotfy" src={spotfy} alt="Logo spotfy" /> 
-        <nav>...</nav>
       </div>
 
       <h3>News</h3>
