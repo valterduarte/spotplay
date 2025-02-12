@@ -1,13 +1,13 @@
 import retangulo8 from "../../assets/imgs/banner-carrossel.png"
 import './style.css';
 
-function Carrosselsongs(){
+function Carrosselsongs({banner,artist,trackName}){
   return (
     <div id="wrapper-song">
-      <img src={retangulo8} alt="banner-carrossel" />
+      <img src={banner} alt="banner-carrossel"/>
       <div className="title-like"></div>
-      <p id='title-song'>Bad Guy</p>
-      <p id="subtitle">Billie Eilish</p>
+      <p id='title-song'>{trackName}</p>
+      <p id="subtitle">{artist}</p>
     </div>
   )
 }
