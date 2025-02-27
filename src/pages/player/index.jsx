@@ -3,6 +3,8 @@ import './style.css'
 import Carrosselsongs from "../../components/Carrosselsongs"
 import Songslist from '../../components/Songslist'
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+
 
 function Player() {
   const [token, setToken] = useState('');
@@ -51,10 +53,18 @@ function Player() {
       </div>
 
       <h3>News</h3>
-      <div id="songbox">
-        {tracks.slice(0, 3).map((track) => <Carrosselsongs artist={track.artists[0].name} trackName={track.name} banner={track.album.images[1].url}   key={track.id}  />)}
-      </div>
-
+        <div id="songbox">
+          {tracks.slice(0, 3).map((track) => (
+            <Link to={`/nowplaying`} key={track.id}>
+              <Carrosselsongs
+                artist={track.artists[0].name}
+                trackName={track.name}
+                banner={track.album.images.length > 0 ? track.album.images[1].url : ''}
+              />
+            </Link>
+          ))}
+        </div>
+      
       <h3>Playlist</h3>
       <div id="playlist">
         {tracks.slice(0, 10).map((track) => <Songslist trackName={track.name} artist={track.artists[0].name} trackDuration={track.duration_ms} key={track.id} />)}
