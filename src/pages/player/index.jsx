@@ -5,7 +5,6 @@ import Songslist from '../../components/Songslist'
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-
 function Player() {
   const [token, setToken] = useState('');
   const [tracks, setTracks] = useState([]);
@@ -59,7 +58,7 @@ function Player() {
               <Carrosselsongs
                 artist={track.artists[0].name}
                 trackName={track.name}
-                banner={track.album.images.length > 0 ? track.album.images[1].url : ''}
+                banner={track.album.images.length > 0 ? track.album.images[1].url : spotfy}
               />
             </Link>
           ))}
