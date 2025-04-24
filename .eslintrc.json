@@ -17,5 +17,11 @@
         "react"
     ],
     "rules": {
+        "react/react-in-jsx-scope": "off",
+        "react/prop-types": "off",
+        "import/order": "off",
+        "jsx-a11y/anchor-is-valid": "off",
+        "jsx-a11y/no-noninteractive-element-interactions": "off"
+        
     }
 }
