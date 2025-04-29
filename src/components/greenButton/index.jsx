@@ -1,15 +1,15 @@
 import './styles.css';
 
-function GreenButton({ label, touchClick, isDisabled=false }) {
+function GreenButton({ label, touchClick, isDisabled = false }) {
   function onClick() {
     touchClick();
   }
 
   return (
-    <button disabled={isDisabled} onClick={onClick} className="btn-register">
+    <button type="button" disabled={isDisabled} onClick={onClick} className="btn-register">
       {label}
     </button>
-  )
+  );
 }
 
-export default GreenButton
+export default GreenButton;
